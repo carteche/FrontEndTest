@@ -7,13 +7,15 @@ import { DetalleComponent } from './detalle/detalle.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ListadoPrincipalComponent } from './listado-principal/listado-principal.component';
+import { TopRatingFilmsComponent } from './top-rating-films/top-rating-films.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DetalleComponent,
-    ListadoPrincipalComponent
+    ListadoPrincipalComponent,
+    TopRatingFilmsComponent
   ],
   imports: [
     BrowserModule,

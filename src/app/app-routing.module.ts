@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { ListadoPrincipalComponent } from './listado-principal/listado-principal.component';
+import { TopRatingFilmsComponent } from './top-rating-films/top-rating-films.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/films', pathMatch: 'full' },
   { path: 'films', component: ListadoPrincipalComponent,},
-  { path: 'detail', component: DetalleComponent,}
+  { path: 'detail/:id', component: DetalleComponent,},
+  { path: 'toprating', component: TopRatingFilmsComponent,}
 ];
 
 @NgModule({

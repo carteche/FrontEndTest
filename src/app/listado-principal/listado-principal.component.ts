@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import { Movie } from '../Model/movie';
+import { Movie, ResultsEntity } from '../Model/movie';
 import { DataService } from '../service/data.service';
 
 
@@ -13,9 +14,24 @@ export class ListadoPrincipalComponent implements OnInit {
 
   lastMovie: any;
   popularMovies !: Movie;
+  topRated!: Movie;
 
 
-  constructor(private dataService: DataService){}
+  movie : ResultsEntity | undefined;
+
+  
+
+
+  constructor(private dataService: DataService, public router: Router){}
+
+
+  gotoDetail(id: number): void {
+    this.router.navigate(['/detail', id]);
+  }
+
+
+  
+  
   
 
 
@@ -25,26 +41,41 @@ export class ListadoPrincipalComponent implements OnInit {
     this.getTopRated();
   }
 
+  getMovieById(id: number){
+    this.dataService.getMovieById(id).subscribe(data => {
+      this.movie = data
+      console.log("ID***********" )
+      console.log(this.movie)
+    })
+  }
+
 
   getLastMovie(){
     this.dataService.getLastMovie().subscribe(resultado =>{
       this.lastMovie = resultado;
+      console.log("ULTIMA")
       console.log(this.lastMovie);
     })
     
   }
+
+ 
+
   
 
   getPopularMovies(){
     this.dataService.getPopularMovies().subscribe(resultado =>{
       this.popularMovies = this.modifyData(resultado);
+      console.log("POPULARES")
       console.log(this.popularMovies)
     })
   }
 
   getTopRated(){
     this.dataService.getTopRated().subscribe(resultado =>{
-      this.popularMovies = this.modifyData(resultado);
+      this.topRated = this.modifyData(resultado);
+      console.log("mejores reseñas")
+      console.log(this.topRated)
     })
   }
 
@@ -62,6 +93,9 @@ export class ListadoPrincipalComponent implements OnInit {
     return movies;
 
   }
+
+
+  
 
 
 }

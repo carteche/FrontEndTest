@@ -40,6 +40,12 @@ a{
     font-size: 20px;
 }
 
+h6{
+    border: 0.5px solid 0b032e;
+    border-radius: 10%;
+    background-color: cadetblue;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -59,13 +65,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.2em;
+  padding: 1.5em;
 }
 
 .card {
   background-color: #432280;
-  width: 25em;
-  height: 25em;
+  width: 22em;
+  height: 40em;
   border-radius: 0.75em;
   box-shadow: 3px 3px 5px 1px rgb(0 0 0 / 20%);
 }
@@ -159,4 +165,3 @@ body {
 .card-link:hover {
   opacity: 0.9;
 }
-

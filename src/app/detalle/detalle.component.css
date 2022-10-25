@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #08002e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+
+
+.search:focus{
+    background-color:#0b032e;
+}
+
+.movie{
+    margin: 2%;
+    position: relative;
+}
+
+.movie:hover{
+    transform: scale3d(1.02, 1.02, 1);
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+a{
+    float: right;
+    margin-right: 2%;
+    font-size: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.card {
+  background-color: #432280;
+  width: 75rem;
+  height: 75rem;
+  border-radius: 0.75em;
+  box-shadow: 3px 3px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: var(--blue-dark);
+  opacity: 0.5;
+}
+
+.card-img-src {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.card-title p, .card-title h3 {
+  margin: 0;
+}
+
+.card-review {
+  display: flex;
+  align-items: center;
+}
+
+.card-review span {
+  padding-top: 2px;
+  display: inline-block;
+  margin-right: 0.5em;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.card-star {
+  width: 1.5em;
+  fill: var(--orange);
+}
+
+.card-props {
+  font-size: 0.8em;
+  opacity: 0.8;
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
+.card-props span {
+  display: inline-block;
+  margin-right: 1.5em
+}
+
+
+
+
+
