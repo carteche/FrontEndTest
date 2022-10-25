@@ -2,13 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DetalleComponent } from './detalle/detalle.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { ListadoPrincipalComponent } from './listado-principal/listado-principal.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetalleComponent,
+    ListadoPrincipalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
