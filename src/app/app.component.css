@@ -14,25 +14,17 @@ header{
 }
 
 li{
-    margin-left: 150px;
-    float: left;
+    margin-left: 10px;
 }
 
-.search{
-    justify-content: flex-end;
-    background-color: transparent;
-    border: 2px solid #08002e;
-    border-radius: 25px;
-    padding: 5%;
-    color: white;
-}
 
 a{
     display:flex;
     margin-bottom: 10%;
     padding: 1rem;
     border: 2px solid #08002e;
-    border-radius: 2rem;
+    border-radius: 0.8rem;
+    color: white;
 
 }
 
@@ -42,7 +34,15 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 
 
-a:hover { text-decoration: none; }
+a:hover { 
+    text-decoration: none; 
+    background-color: rgb(68, 17, 134);
+    color: white;
+}
 
 
 a:active { text-decoration: none; }
+
+footer{
+    color: white;
+}

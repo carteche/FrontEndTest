@@ -31,6 +31,8 @@ export class DataService {
     return this.http.get<Movie>(this.url + '/movie/top_rated?api_key=' + environment.api_key);
   }
 
+   
+
   
 
 
