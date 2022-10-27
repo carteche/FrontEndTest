@@ -6,6 +6,13 @@ footer{
     background-color: #1f1161;
 }
 
+img{
+    width: 150px;
+    height: 60px;
+    margin-right: 50px;
+    
+}
+
 
 header{
     padding: 1rem;
@@ -46,3 +53,7 @@ a:active { text-decoration: none; }
 footer{
     color: white;
 }
+
+
+
+

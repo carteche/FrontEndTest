@@ -11,11 +11,6 @@ body{
 }
 
 
-
-.search:focus{
-    background-color:#0b032e;
-}
-
 .movie{
     margin: 2%;
     position: relative;

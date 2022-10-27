@@ -12,7 +12,6 @@ import { DataService } from '../service/data.service';
 })
 export class ListadoPrincipalComponent implements OnInit {
 
-  lastMovie: any;
   popularMovies !: Movie;
   topRated!: Movie;
 
@@ -29,14 +28,7 @@ export class ListadoPrincipalComponent implements OnInit {
     this.router.navigate(['/detail', id]);
   }
 
-
-  
-  
-  
-
-
   ngOnInit(): void {
-    this.getLastMovie();
     this.getPopularMovies();
     this.getTopRated();
   }
@@ -49,19 +41,6 @@ export class ListadoPrincipalComponent implements OnInit {
     })
   }
 
-
-  getLastMovie(){
-    this.dataService.getLastMovie().subscribe(resultado =>{
-      this.lastMovie = resultado;
-      console.log("ULTIMA")
-      console.log(this.lastMovie);
-    })
-    
-  }
-
- 
-
-  
 
   getPopularMovies(){
     this.dataService.getPopularMovies().subscribe(resultado =>{
