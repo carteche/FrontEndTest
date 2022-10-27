@@ -1,6 +1,7 @@
 # FrontEndTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+Prueba técnica de Front End para Doonamis.
+Fecha Limite de entrega: 02/11/2022, entregado el 27/10/2022.
 
 ## Development server
 
